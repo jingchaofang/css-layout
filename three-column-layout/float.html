@@ -30,8 +30,10 @@
         background-color: green;
       }
       .float .center {
+        /*与浮动元素相邻的已生成BFC的元素不能与浮动元素互相覆盖*/
+        overflow: hidden;
         background-color: yellow;
-        margin: 0 100px;
+        /* overflow:hidden或margin: 0 100px;/*
       }
     </style>
     <h1>三栏布局-两边定宽，中间自适应</h1>
